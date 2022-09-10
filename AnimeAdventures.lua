@@ -1,7 +1,7 @@
 -- v1.4.8 --
 -- + Made autoJoin more reliable 
 -- - Removed these childish variable and function names
--- I am also an independent develeoper now ~Zero
+-- I am also an independent develeoper now ~Zero.
 
 -- v1.4.7 --
 -- + Added Ant Kingdom
@@ -172,10 +172,12 @@ function setUp()
 	--------------------------------------------------
 	--------------------------------------------------
 	-- Uilib Shits
-
+    --local universeResponseData = HttpService:JSONDecode(game:HttpGet "https://api.roblox.com/universes/get-universe-containing-place?placeid=8304191830")
+    --print("https://thumbnails.roblox.com/v1/games/icons?universeIds="..universeResponseData.UniverseId.."&size=150x150&format=Png&isCircular=false")
+    --local pngResponeData = HttpService:JSONDecode(game:HttpGet "https://thumbnails.roblox.com/v1/games/icons?universeIds="..universeResponseData.UniverseId.."&size=150x150&format=Png&isCircular=false")
 	local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
 	local win = DiscordLib:Window("[🐛UPD 4] Anime Adventures 1.4.8".." - "..tostring(identifyexecutor()))
-	local serv = win:Server("Anime Adventures", "https://tr.rbxcdn.com/bc2ea8300bfaea9fb3193d7f801f0e8b/768/432/Image/Png")
+	local serv = win:Server("Anime Adventures", "http://www.roblox.com/asset/?id=6031075938")
 
 	if game.PlaceId == 8304191830 then
 		local unitselecttab = serv:Channel("Select Units")
